@@ -4,8 +4,8 @@ import javax.swing.plaf.metal.DefaultMetalTheme;
 public class Exercicio18 {
     public static void main(String[] args){
         String nome = (JOptionPane.showInputDialog(null, "Digite seu nome"));
-        double preço = Double.parseDouble(JOptionPane.showInputDialog(null, "Dgite o preço"));
-        char categoria = (JOptionPane.showInputDialog(null, "Dgite a categoria")).toUpperCase().charAt(0);
+        double preco = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o valor"));
+        char categoria = (JOptionPane.showInputDialog(null, "Digite a categoria")).toUpperCase().charAt(0);
        
         double desconto = 0;
         switch(categoria){
@@ -36,7 +36,7 @@ public class Exercicio18 {
 
         }
 
-        double precofinal = preço - (preço * desconto / 100);
+        double precofinal = preco - (preco * desconto / 100);
         JOptionPane.showMessageDialog(null, "O valor a  ser pago é: " + precofinal);
 
     }
